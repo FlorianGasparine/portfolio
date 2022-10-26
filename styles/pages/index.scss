@@ -4,144 +4,198 @@
   padding: 0;
   font-family: "Itim", cursive;
 }
-body {
-  background-color: rgba(1, 37, 49, 0.95);
-}
 
-.container {
-  &__homepage {
-    display: flex;
-    flex-direction: column;
-  }
-}
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #212529;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  animation: loader ease-in-out 5.5s both;
 
-.home {
-  &__menuHome {
-    position: relative;
-    width: 100%;
-    height: 40vh;
+  &:after {
+    content: "";
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    border-radius: 0px 0px 500px 500px;
-    box-shadow: 5px 5px 10px 1px #ffcb0d21;
-    background: rgba(1, 37, 49, 0.95);
-    overflow: hidden;
-
-    ul {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-
-      li {
-        list-style: none;
-
-        a {
-          position: relative;
-          display: block;
-          text-align: center;
-          margin-bottom: 20px;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 2em;
-          color: #fff;
-          font-weight: 700;
-          transition: 0.5s;
-          transition-delay: 0.25s;
-
-          &:hover {
-            color: rgba(255, 255, 255, 0.1);
-            transform: translateY(-20px);
-            transition-delay: 0s;
-          }
-          &::before {
-            content: attr(data-text);
-            position: absolute;
-            bottom: -15px;
-            pointer-events: none;
-            z-index: 1;
-            font-size: 0.35em;
-            color: #ffca0d;
-            font-weight: 500;
-            letter-spacing: 10px;
-            opacity: 0;
-            transition: 0.3s;
-            text-shadow: 0 0 10px #ffca0d, 0 0 30px #feca0c, 0 0 80px #fac608;
-          }
-          &:hover::before {
-            letter-spacing: 6px;
-            opacity: 1;
-            transition-delay: 0.25s;
-          }
-        }
-      }
-    }
+    animation: textLoader ease-in-out 4s 1s both;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .home {
-    &__menuHome {
-      position: relative;
-      width: 40%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 0px 500px 500px 0px;
-      box-shadow: 5px 5px 10px 1px #ffcb0d21;
-      background: rgba(1, 37, 49, 0.95);
-      overflow: hidden;
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
-      ul {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin-left: 30px;
+// content: "Ca tombe bien ! Je suis passionnée par le web et j'ai pu acquérir des compétences en HTML CSS JavaScript React/Node. La suite, c'est à vous de la découvrir ! 🔽";
 
-        li {
-          list-style: none;
+@keyframes textLoader {
+  10% {
+    content: "V";
+  }
+  12% {
+    content: "Vo";
+  }
+  14% {
+    content: "Vou";
+  }
+  16% {
+    content: "Vous";
+  }
+  18% {
+    content: "Vous r";
+  }
+  20% {
+    content: "Vous re";
+  }
+  22% {
+    content: "Vous rec";
+  }
+  24% {
+    content: "Vous rech";
+  }
+  26% {
+    content: "Vous reche";
+  }
+  28% {
+    content: "Vous recher";
+  }
+  30% {
+    content: "Vous recherc";
+  }
+  32% {
+    content: "Vous recherch";
+  }
+  34% {
+    content: "Vous recherche";
+  }
+  36% {
+    content: "Vous recherchez";
+  }
+  38% {
+    content: "Vous recherchez u";
+  }
+  40% {
+    content: "Vous recherchez un";
+  }
+  42% {
+    content: "Vous recherchez un D";
+  }
+  42% {
+    content: "Vous recherchez un Dé";
+  }
+  44% {
+    content: "Vous recherchez un Dév";
+  }
+  46% {
+    content: "Vous recherchez un Déve";
+  }
+  48% {
+    content: "Vous recherchez un Dével";
+  }
+  50% {
+    content: "Vous recherchez un Dévelo";
+  }
+  52% {
+    content: "Vous recherchez un Dévelop";
+  }
+  54% {
+    content: "Vous recherchez un Développ";
+  }
+  56% {
+    content: "Vous recherchez un Développe";
+  }
+  58% {
+    content: "Vous recherchez un Développeu";
+  }
+  60% {
+    content: "Vous recherchez un Développeur";
+  }
+  62% {
+    content: "Vous recherchez un Développeur W";
+  }
+  64% {
+    content: "Vous recherchez un Développeur We";
+  }
+  66% {
+    content: "Vous recherchez un Développeur Web";
+  }
+  68% {
+    content: "Vous recherchez un Développeur Web ?";
+  }
+  100% {
+    content: "Vous recherchez un Développeur Web ?";
+  }
+}
 
-          a {
-            margin-bottom: 20px;
-            position: relative;
-            display: block;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 3em;
-            color: #fff;
-            font-weight: 700;
-            transition: 0.5s;
-            transition-delay: 0.25s;
+.loader {
+  position: relative;
+  width: 280px;
+  height: 15px;
+  top: 420px;
+  margin: 0 auto;
+  background: #fff;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 
-            &:hover {
-              color: rgba(255, 255, 255, 0.1);
-              transform: translateY(-20px);
-              transition-delay: 0s;
-            }
-            &::before {
-              content: attr(data-text);
-              position: absolute;
-              bottom: -15px;
-              pointer-events: none;
-              z-index: 1;
-              font-size: 0.35em;
-              color: #ffca0d;
-              font-weight: 500;
-              letter-spacing: 20px;
-              opacity: 0;
-              transition: 0.3s;
-              text-shadow: 0 0 10px #ffca0d, 0 0 30px #feca0c, 0 0 80px #fac608;
-            }
-            &:hover::before {
-              letter-spacing: 6px;
-              opacity: 1;
-              transition-delay: 0.25s;
-            }
-          }
-        }
-      }
-    }
+  @media screen and (min-width: 510px) {
+    width: 520px;
+    top: 435px;
+  }
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #fb0094
+  );
+  animation: animate 20s linear infinite;
+  background-size: 500%;
+}
+.loader::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #fb0094
+  );
+  animation: animate 20s linear infinite both;
+  background-size: 500%;
+  filter: blur(20px);
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -500% 0;
   }
 }
