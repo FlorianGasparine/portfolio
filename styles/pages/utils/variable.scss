@@ -1,4 +1,13 @@
 $bg-orange: #6a040f;
+$black: #120e0e;
+
+.bg-orange {
+  background-color: $bg-orange;
+}
+
+.color-black {
+  color: $black;
+}
 
 $spacer: 1rem;
 $spacers: (
