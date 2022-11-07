@@ -27,14 +27,14 @@
     <title>Florian Gasparine Porfolio Développeur WEB</title>
   </head>
   <body data-bs-spy="scroll">
-    <div class="loading">
+    <!-- <div class="loading">
       <div class="loader"></div>
-    </div>
+    </div> -->
 
     <main>
-      <header>
+      <header class="sticky-top">
         <nav
-          class="navbar navbar-dark navbar-expand-lg sticky-top p-4 p-lg-2 bg-dark"
+          class="navbar sticky-top navbar-dark navbar-expand-lg p-4 p-lg-2 bg-dark"
           id="navbar--apparitionDelay"
         >
           <div class="container-fluid">
@@ -61,7 +61,9 @@
           >
             <ul class="navbar-nav mt-3 mt-lg-0">
               <li class="nav-item">
-                <a href="#" class="nav-link m-lg-2 text-center"
+                <a
+                  href="#section__services--ancre"
+                  class="nav-link m-lg-2 text-center"
                   ><p class="h4">Services</p></a
                 >
               </li>
@@ -85,27 +87,111 @@
         </nav>
       </header>
 
+      <!-- First Section -->
+
       <div class="background--custom pt-5 p-0 vh-100 h-25">
-        <div class="container h-75 w-75 mt-5 background--custom">
-          <div class="row h-100 background--custom shadow-lg rounded-5">
-            <div class="col-12 background--custom my-auto">
-              <h1 class="text-light text-center background--custom">
-                Développeur Web
+        <div class="container h-75 w-75 mt-5">
+          <div class="row h-100 shadow-lg position-relative rounded-5">
+            <div class="col-12 my-auto">
+              <h1 class="text-light text-center pt-4">
+                Vous recherchez un développeur web ?
               </h1>
             </div>
-            <div class="col-12 background--custom my-auto">
-              <h3 class="text-light text-center background--custom">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                nulla, laborum nihil sequi deserunt quia maiores totam,
-                voluptatem eum necessitatibus atque quibusdam! Dignissimos illum
-                pariatur quia distinctio omnis quod porro.
-              </h3>
+            <div class="col-12 my-auto w-75 mx-auto">
+              <p class="text-light text-center mt-4 h5">
+                <span class="d-block">Ca tombe bien !</span>
+                <br />
+                Je suis un développeur passionné ! <br />
+                Depuis mes débuts, j'ai pu acquérir des compétences dans le
+                développement web
+                <br />
+              </p>
+              <p class="text-center mt-4 mt-lg-6">
+                La suite, c'est à vous de la découvrir !
+              </p>
+            </div>
+            <div class="col-12 position-relative">
+              <a
+                href="#section__projet--ancre"
+                id="link__presentation--pointer"
+              >
+                <!-- <img
+                  src="./styles/assets/down.png"
+                  alt="Flèche pour découvrir la suite"
+                  class="mt-4 mt-lg-8"
+                  id="arrow__presentation--position"
+                /> -->
+                <div class="arrow"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="section__projet--ancre"></div>
+      </div>
+
+      <div class="w-100 bg-orange">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center m-6">
+              <div class="">
+                <h2 class="h1">Faisons connaissance :)</h2>
+                <hr class="w-50 mx-auto" />
+              </div>
+              <p class="text-secondary h5 text-dar">
+                Avant toute chose, je me présente. <br />
+                J'ai 24 ans et j'ai réalisé divers projets en utilisant les
+                technos suivantes
+                <br />
+                <br />
+              </p>
+              <div class="m-5">
+                <img
+                  src="./styles/assets/html-5.png"
+                  class="m-2"
+                  alt="Logo HTML 5"
+                />
+                <img
+                  src="./styles/assets/css-3.png"
+                  class="m-2"
+                  alt="Logo CSS 3"
+                />
+                <img
+                  src="./styles/assets/js.png"
+                  class="m-2"
+                  alt="Logo JavaScript"
+                />
+                <img
+                  src="./styles/assets/react.png"
+                  class="m-2"
+                  alt="Logo React"
+                />
+                <img
+                  src="./styles/assets/mongodb.png"
+                  class="m-2"
+                  alt="Logo MongoDB"
+                />
+                <img
+                  src="./styles/assets/nodejs.png"
+                  class="m-2"
+                  alt="Logo NodeJs"
+                />
+                <img
+                  src="./styles/assets/bootstrap.png"
+                  class="m-2"
+                  alt="Logo Bootstrap"
+                />
+              </div>
+              <a
+                href="#section__services--ancre"
+                class="btn btn-outline-light rounded-4 p-3 mt-3"
+                >Continuer</a
+              >
             </div>
           </div>
         </div>
       </div>
-    </main>
 
-    <div class="vh-100 bg-secondary"></div>
+      <div class="bg-secondary vh-100" id="section__services--ancre"></div>
+    </main>
   </body>
 </html>
