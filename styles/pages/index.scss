@@ -6,6 +6,22 @@
   background-color: #212529;
 }
 
+#navbar--apparitionDelay {
+  animation: navbarApparitionDelay ease-in-out 5.5s both;
+}
+
+@keyframes navbarApparitionDelay {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .loading {
   position: fixed;
   width: 100%;
@@ -14,11 +30,11 @@
   color: white;
   font-size: 30px;
   text-align: center;
-  animation: loader ease-in-out 5.5s both;
+  animation: loader ease-in-out 5.7s both;
 
   &:after {
     content: "";
-    height: 80%;
+    height: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,8 +159,8 @@
   position: relative;
   width: 280px;
   height: 15px;
-  top: 400px;
-  margin: 0 auto;
+  top: 450px;
+  margin: 0px auto;
   background: #fff;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 
@@ -198,5 +214,22 @@
   }
   100% {
     background-position: -500% 0;
+  }
+}
+
+// Section Services
+.background--custom {
+  background: linear-gradient(90deg, #f5762c, #eda30f, #dc6a06);
+  background-size: 300%;
+
+  animation: gradient 7s alternate infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 100%;
   }
 }
