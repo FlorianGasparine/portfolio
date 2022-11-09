@@ -1,0 +1,17 @@
+.spot {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #ffc107;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107, 0 0 30px #ffc107;
+  }
+}
+
+.formation__ligne {
+  width: 3px;
+  height: 100px;
+  background: #6c757d77;
+}
