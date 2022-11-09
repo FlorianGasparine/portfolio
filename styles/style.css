@@ -304,6 +304,10 @@
   background: rgba(108, 117, 125, 0.4666666667);
 }
 
+.lightShadow:hover {
+  box-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
