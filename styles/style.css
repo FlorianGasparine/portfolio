@@ -3,6 +3,10 @@
   background-color: #6a040f;
 }
 
+.bg-pourpre {
+  background-color: #370617;
+}
+
 .bg-darkblue {
   background-color: #03071e;
 }
@@ -302,6 +306,10 @@
   width: 3px;
   height: 100px;
   background: rgba(108, 117, 125, 0.4666666667);
+}
+
+.lightShadow--spotLight {
+  box-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107, 0 0 30px #ffc107;
 }
 
 .lightShadow:hover {

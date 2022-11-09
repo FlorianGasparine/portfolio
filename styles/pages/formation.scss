@@ -16,6 +16,10 @@
   background: #6c757d77;
 }
 
+.lightShadow--spotLight {
+  box-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107, 0 0 30px #ffc107;
+}
+
 .lightShadow:hover {
   box-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107;
 }

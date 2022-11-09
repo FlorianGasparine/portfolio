@@ -87,7 +87,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-warning m-lg-2 text-center"
+                <a
+                  href="#section__contact--ancre"
+                  class="nav-link text-warning m-lg-2 text-center"
                   ><p class="h4">Contact</p></a
                 >
               </li>
@@ -145,11 +147,9 @@
                   <hr class="w-25 mx-auto border-warning" />
                 </div>
                 <p class="text-secondary h5 text-dar m-5">
-                  Avant toute chose, je me présente.
-                  <br />
                   Je m'appelle Florian et j'ai 24 ans.
                   <br />
-                  J'ai réalisé divers projets en utilisant les technos suivantes
+                  Voici les technos pour lesquelles j'ai réalisé des projets :
                   <br />
                   <br />
                 </p>
@@ -221,31 +221,67 @@
             </div>
             <div class="row w-100 m-0">
               <div class="col-12 col-lg-3 text-center mb-3">
-                <i class="fas text-warning fa-4x fa-gem"></i>
+                <i class="fas text-warning fa-4x fa-gem mb-3"></i>
                 <h3 class="text-light">Frameworks</h3>
                 <p class="text-muted">
                   Experience avec les frameworks <br />
                   React et Express
                 </p>
               </div>
+
               <div class="col-12 col-lg-3 text-center mb-3">
-                <i class="fas text-warning fa-4x fa-eye"></i>
-                <h3 class="text-light">Veille techno</h3>
-                <p class="text-muted">Friants de nouveautés</p>
+                <i class="fas text-warning fa-4x fa-window-maximize mb-3"></i>
+                <h3 class="text-light">Site vitrine</h3>
+                <p class="text-muted">
+                  Experience avec HTML5 CSS3 <br />
+                  SASS Bootstrap5
+                </p>
               </div>
+
               <div class="col-12 col-lg-3 text-center mb-3">
+                <i class="fas text-warning fa-4x fa-shopping-cart mb-3"></i>
+                <h3 class="text-light">Site e-commerce</h3>
+                <p class="text-muted">
+                  Experience avec <br />
+                  JavaScript vanilla
+                </p>
+              </div>
+
+              <div class="col-12 col-lg-3 text-center mb-3 mx-auto">
+                <i class="fas text-warning fa-4x fa-server mb-3"></i>
+                <h3 class="text-light">API</h3>
+                <p class="text-muted">
+                  Création d'API REST avec <br />
+                  NodeJs et Express
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-lg-4 text-center mb-3 mx-auto">
+                <i class="fas text-warning fa-4x fa-wrench mb-3"></i>
+                <h3 class="text-light">Optimisation SEO</h3>
+                <p class="text-muted">
+                  Prise en compte de tous les utilisateurs. <br />
+                  Amélioration de la rapidité, des performances...
+                </p>
+              </div>
+
+              <div class="col-12 col-lg-4 text-center mb-3">
+                <i class="fas text-warning fa-4x fa-globe mb-3"></i>
+                <h3 class="text-light">Mise en ligne</h3>
+                <p class="text-muted">
+                  Mise en ligne de site internet <br />
+                  avec OVH ou Firebase
+                </p>
+              </div>
+
+              <div class="col-12 col-lg-4 text-center mb-3">
                 <i class="fas text-warning fa-4x fa-users"></i>
                 <h3 class="text-light">Ergonomie</h3>
                 <p class="text-muted">
-                  Sur mon epitaphe il sera inscrit : <br />
-                  "Il aura tout fait pour l'UX"
-                </p>
-              </div>
-              <div class="col-12 col-lg-3 text-center mb-3">
-                <i class="fas text-warning fa-4x fa-heart"></i>
-                <h3 class="text-light">Passion</h3>
-                <p class="text-muted">
-                  Je met tout mon coeur à l'ouvrage dans chaque nouveau projet
+                  Un point d'honneur à l'experience <br />
+                  des utilisateurs
                 </p>
               </div>
             </div>
@@ -504,13 +540,20 @@
             <div class="col">
               <h2 class="text-light text-center">Formation</h2>
               <hr class="bg-light w-25 mx-auto border-warning" />
-              <h3 class="text-muted h6 text-center mb-6">
+              <h3 class="text-muted h6 text-center mb-5">
                 Mon parcours depuis l'obtention de mon baccalauréat
               </h3>
             </div>
           </div>
           <div class="row position-relative">
-            <div class="col_auto w-100">
+            <div class="col text-center">
+              <a
+                href="./styles/assets/CV_Florian_Gasparine.pdf"
+                download="CV_Florian_Gasparine.pdf"
+                class="btn btn-warning p-3 lightShadow mb-5"
+              >
+                Consulter mon CV
+              </a>
               <div>
                 <h2 class="text-center text-warning">
                   Développeur Web
@@ -518,7 +561,7 @@
                 </h2>
                 <p class="text-light text-center">OpenClassrooms 2022</p>
 
-                <div class="spot mx-auto"></div>
+                <div class="spot mx-auto lightShadow--spotLight"></div>
                 <div class="formation__ligne mx-auto"></div>
               </div>
 
@@ -561,22 +604,64 @@
         </div>
       </section>
 
-      <section class="bg-darkblue">
+      <section class="bg-darkblue vh-100" id="section__contact--ancre">
         <div class="container">
-          <div class="row">
-            <div class="col text-center pb-6">
-              <!-- Renseigner le nom de domaine de la page pour la compatibilité avec firefox : https://www.alsacreations.com/astuce/lire/1603-html5-attribut-download.html -->
-              <a
-                href="./styles/assets/CV_Florian_Gasparine.pdf"
-                download="CV_Florian_Gasparine.pdf"
-                class="btn btn-warning p-3 lightShadow"
-              >
-                Consulter mon CV
-              </a>
+          <div class="row h-25">
+            <div class="col">
+              <div class="col">
+                <h2 class="text-warning text-center h1 mt-6">Contact</h2>
+
+                <hr class="bg-light w-25 mx-auto border-warning" />
+                <h3 class="text-muted h6 text-center mb-6">
+                  N'hesitez pas à me contacter
+                </h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="m-4">
+                  <a
+                    href="https://www.linkedin.com/in/florian-gasparine-049544253/"
+                    target="_blank"
+                    class="text-decoration-none"
+                  >
+                    <i
+                      class="fab fa-3x text-warning fa-linkedin social--hover"
+                    ></i>
+                  </a>
+                </div>
+
+                <div class="m-4">
+                  <a
+                    href="https://github.com/FlorianGasparine?tab=repositories"
+                    target="_blank"
+                    class="text-decoration-none"
+                  >
+                    <i class="fab fa-3x text-warning fa-github-square"></i>
+                  </a>
+                </div>
+
+                <div class="m-4">
+                  <a
+                    href="./styles/assets/CV_Florian_Gasparine.pdf"
+                    download="CV_Florian_Gasparine.pdf"
+                    class="btn btn-warning p-3 lightShadow mb-5"
+                  >
+                    Consulter mon CV
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="footer p-5 bg-pourpre">
+      <div class="container">
+        <p class="text-light text-center my-auto">© Florian Gasparine | 2022</p>
+      </div>
+    </footer>
   </body>
 </html>
