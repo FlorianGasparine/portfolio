@@ -604,7 +604,7 @@
         </div>
       </section>
 
-      <section class="bg-darkblue vh-100" id="section__contact--ancre">
+      <section class="bg-darkblue" id="section__contact--ancre">
         <div class="container">
           <div class="row h-25">
             <div class="col">
@@ -619,41 +619,88 @@
             </div>
 
             <div class="row">
-              <div class="col">
-                <div class="m-4">
-                  <a
-                    href="https://www.linkedin.com/in/florian-gasparine-049544253/"
-                    target="_blank"
-                    class="text-decoration-none"
-                  >
-                    <i
-                      class="fab fa-3x text-warning fa-linkedin social--hover"
-                    ></i>
-                  </a>
-                </div>
+              <div class="col mb-6">
+                <form>
+                  <div class="mb-3 w-50 mx-auto">
+                    <label for="name" class="form-label text-warning"
+                      >Prénom</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="John"
+                    />
+                  </div>
 
-                <div class="m-4">
-                  <a
-                    href="https://github.com/FlorianGasparine?tab=repositories"
-                    target="_blank"
-                    class="text-decoration-none"
-                  >
-                    <i class="fab fa-3x text-warning fa-github-square"></i>
-                  </a>
-                </div>
+                  <div class="mb-3 w-50 mx-auto">
+                    <label for="lastName" class="form-label text-warning"
+                      >Nom</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="Doe"
+                    />
+                  </div>
 
-                <div class="m-4">
-                  <a
-                    href="./styles/assets/CV_Florian_Gasparine.pdf"
-                    download="CV_Florian_Gasparine.pdf"
-                    class="btn btn-warning p-3 lightShadow mb-5"
-                  >
-                    Consulter mon CV
-                  </a>
-                </div>
+                  <div class="mb-3 w-50 mx-auto">
+                    <label for="email" class="form-label text-warning"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="JohnDoe@email.com"
+                    />
+                  </div>
+
+                  <div class="form-floating mt-4 w-50 mx-auto">
+                    <textarea
+                      class="form-control"
+                      placeholder="Ecrivez votre message"
+                      id="message"
+                      style="height: 100px"
+                    ></textarea>
+                    <label for="message">Message...</label>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
+
+          <!-- <div class="row mt-8">
+            <div class="col">
+              <a
+                href="https://www.linkedin.com/in/florian-gasparine-049544253/"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <i class="fab fa-3x text-warning fa-linkedin social--hover"></i>
+              </a>
+            </div>
+            <div class="col">
+              <a
+                href="https://github.com/FlorianGasparine?tab=repositories"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <i class="fab fa-3x text-warning fa-github-square"></i>
+              </a>
+            </div>
+
+            <div class="col">
+              <a
+                href="./styles/assets/CV_Florian_Gasparine.pdf"
+                download="CV_Florian_Gasparine.pdf"
+                class="btn btn-warning p-3 lightShadow mb-5"
+              >
+                Consulter mon CV
+              </a>
+            </div>
+          </div> -->
         </div>
       </section>
     </main>
