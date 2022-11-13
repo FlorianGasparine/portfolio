@@ -29,6 +29,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- SMTPJS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <title>Florian Gasparine Porfolio Développeur WEB</title>
   </head>
   <body data-bs-spy="scroll">
@@ -207,10 +210,9 @@
         </div>
       </section>
 
-      <section>
+      <section id="section__services--ancre">
         <div class="bg-darkblue">
           <div class="container">
-            <div id="section__services--ancre"></div>
             <div class="row w-100 m-0">
               <div class="col">
                 <h2 class="text-light text-center h1 mt-6">
@@ -289,10 +291,9 @@
         </div>
       </section>
 
-      <section>
+      <section id="section__projets--ancre">
         <div class="bg-darkblue">
           <div class="container">
-            <div id="section__projets--ancre"></div>
             <div class="row w-100 m-0">
               <div class="col">
                 <h2 class="text-light text-center h1 mt-6">Mes projets</h2>
@@ -620,7 +621,7 @@
 
             <div class="row">
               <div class="col">
-                <form class="contact-form">
+                <form class="contact-form" id="submit">
                   <div class="mb-3 w-50 mx-auto">
                     <label for="name" class="form-label text-warning"
                       >Prénom</label
@@ -669,17 +670,17 @@
                   <button
                     type="submit"
                     class="btn btn-outline-warning d-block mx-auto mt-4 w-50"
+                    value="Send"
                   >
                     Envoyer
                   </button>
                 </form>
+                <script src="./form.js"></script>
               </div>
             </div>
           </div>
 
-          <script src="./app.js"></script>
-
-          <div class="row mt-8">
+          <div class="row mt-8 w-50 mx-auto">
             <div class="col">
               <a
                 href="https://www.linkedin.com/in/florian-gasparine-049544253/"
