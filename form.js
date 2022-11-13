@@ -22,5 +22,8 @@ submit.addEventListener("submit", (e) => {
     From: "gasparine.florian@gmail.com",
     Subject: `${lastName.value} ${firstName.value} Portfolio`,
     Body: body,
-  }).then(() => alert("🛩️ Message envoyé avec succés"));
+  }).then(() => {
+    alert("🛩️ Message envoyé avec succés");
+    location.reload();
+  });
 });
