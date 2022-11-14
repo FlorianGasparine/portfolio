@@ -1,5 +1,10 @@
-.projet__img-recize {
-  width: 30px;
+.projet {
+  &__img-recize {
+    width: 30px;
+  }
+  &__img-recizeModal {
+    width: 40px;
+  }
 }
 
 .projet__picture__presentation--recize {
@@ -11,4 +16,8 @@
   border-radius: 15px;
   background-color: #370617;
   cursor: pointer;
+}
+
+#icon__projet {
+  left: 0px;
 }

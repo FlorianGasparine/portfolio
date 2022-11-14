@@ -11,7 +11,8 @@ submit.addEventListener("submit", (e) => {
   <h3>Nom : ${lastName.value}</h3>
   <h3>Prénom : ${firstName.value}</h3>
   <h3>Email : ${email.value}</h3>
-  <p>Message : ${message.value}</p>
+  <h3>Message :</h3> 
+  <p>${message.value}</p>
   `;
 
   Email.send({
