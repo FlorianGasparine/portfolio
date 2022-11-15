@@ -8,7 +8,7 @@
 }
 
 .bg-darkblue {
-  background-color: #03071e;
+  background-color: rgba(3, 7, 30, 0.9019607843);
 }
 
 .color-black {
@@ -281,6 +281,9 @@
 }
 .projet__img-recizeModal {
   width: 40px;
+}
+.projet__img-recizeModal--HotTakes {
+  width: 65px;
 }
 
 .projet__picture__presentation--recize {
