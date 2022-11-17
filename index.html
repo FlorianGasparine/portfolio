@@ -1744,6 +1744,7 @@
                     placeholder="John"
                     required
                   />
+                  <div class="form__error--firstName text-danger"></div>
                 </div>
 
                 <div class="mb-3 w-50 mx-auto">
@@ -1757,6 +1758,7 @@
                     placeholder="Doe"
                     required
                   />
+                  <div class="form__error--lastName text-danger"></div>
                 </div>
 
                 <div class="mb-3 w-50 mx-auto">
@@ -1764,12 +1766,13 @@
                     >Email <span class="text-light">*</span></label
                   >
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
                     id="email"
                     placeholder="JohnDoe@email.com"
                     required
                   />
+                  <div class="form__error--email text-danger"></div>
                 </div>
 
                 <div class="form-floating mt-4 w-50 mx-auto">
@@ -1781,6 +1784,7 @@
                     required
                   ></textarea>
                   <label for="message">Message...</label>
+                  <div class="form__error--message text-danger"></div>
                 </div>
                 <button
                   type="submit"
