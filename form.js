@@ -58,7 +58,6 @@ submit.addEventListener("submit", (e) => {
   }
 
   if (validateForm == true) {
-    console.log("Message envoyé");
     let body = `
       <h3>Nom : ${lastName.value}</h3>
       <h3>Prénom : ${firstName.value}</h3>
