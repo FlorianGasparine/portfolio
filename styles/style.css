@@ -26,6 +26,10 @@
   background-color: #6a040f;
 }
 
+#navbar--apparitionDelay {
+  animation: navbarApparitionDelay ease-in-out 4.5s both;
+}
+
 @keyframes navbarApparitionDelay {
   0% {
     opacity: 0;

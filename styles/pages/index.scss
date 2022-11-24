@@ -9,9 +9,9 @@
   background-color: $bg-orange;
 }
 
-// #navbar--apparitionDelay {
-//   animation: navbarApparitionDelay ease-in-out 4.5s both;
-// }
+#navbar--apparitionDelay {
+  animation: navbarApparitionDelay ease-in-out 4.5s both;
+}
 
 @keyframes navbarApparitionDelay {
   0% {
