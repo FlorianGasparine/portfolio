@@ -6,6 +6,18 @@
   border-radius: 10px;
 }
 
+#marginBottom {
+  margin-bottom: 150px;
+}
+
+.presentation__link--img {
+  width: 45px;
+
+  @media screen and (max-width: 425px) {
+    width: 35px;
+  }
+}
+
 .presentation__youtube--size {
   @media screen and (max-width: 990px) {
     width: 500px;

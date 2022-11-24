@@ -26,10 +26,6 @@
   background-color: #6a040f;
 }
 
-#navbar--apparitionDelay {
-  animation: navbarApparitionDelay ease-in-out 4.5s both;
-}
-
 @keyframes navbarApparitionDelay {
   0% {
     opacity: 0;
@@ -226,6 +222,19 @@
 
 #section__presentation--borderRadius {
   border-radius: 10px;
+}
+
+#marginBottom {
+  margin-bottom: 150px;
+}
+
+.presentation__link--img {
+  width: 45px;
+}
+@media screen and (max-width: 425px) {
+  .presentation__link--img {
+    width: 35px;
+  }
 }
 
 @media screen and (max-width: 990px) {
