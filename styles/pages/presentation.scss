@@ -38,9 +38,15 @@
 }
 
 .background--custom {
-  background: linear-gradient(90deg, #f5762c, #eda30f, #dc6a06);
+  background: linear-gradient(90deg, #f5762cd1, #eda30fd6, #dc6a06d6);
   background-size: 300%;
   animation: gradient 7s alternate infinite;
+
+  &--highlight{
+    background: linear-gradient(90deg, #f5762c, #eda30f, #dc6a06);
+  background-size: 300%;
+  animation: gradient 7s alternate infinite;
+  }
 }
 
 @keyframes gradient {

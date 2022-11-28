@@ -1,0 +1,5 @@
+.form__contact--withResponsive{
+    @media screen and (min-width : 768px) {
+        max-width: 50%;
+    }
+}
